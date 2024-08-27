@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --ColorPrimario: #000000;
+    --ColorSecundario: #F4DFC8;
+    --ColorTerciario: #F4EAE0;
+
+    --FuenteRoboto: "Roboto", sans-serif;
+}
+
+body{
+    background-image: url(/Assets/Hoja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 200px;
+}
+
+.Header{
+    color: var(--ColorPrimario);
+    height: 75px;
+    text-align: center;
+    line-height: 90px;
+    font-family: var(--FuenteRoboto);
+    font-size: 24px;
+}
+
+.Izquierda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.AreaTexto{
+    width: 300px;
+    height: 310px;
+    padding: 10px;
+    resize: none;
+    border: 2px dotted var(--ColorPrimario);
+    background-color: transparent;
+    border-radius: 10%;
+}
+
+::placeholder { 
+    color:var(--ColorPrimario); 
+    font-family: 
+    var(--FuenteRoboto); 
+    font-size: 16PX;
+}
+    
+
+.Advertencia{
+    color: var(--ColorPrimario);
+    font-family: var(--FuenteRoboto);
+    font-size: 19px;
+}
+
+.Centro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ImagenFlecha{
+    width: 300px;
+    height: 200px;
+}
+
+.Botones{
+    margin-top: 140px;
+}
+
+.BotonEncriptar{
+    width: 150px;
+    height: 50px;
+    color: var(--ColorPrimario);
+    border: dotted var(--ColorPrimario);
+    background-color: transparent;
+    cursor: pointer;
+    font-family: var(--FuenteRoboto);
+}
+
+.BotonDesencriptar{
+    width: 150px;
+    height: 50px;
+    color: var(--ColorPrimario);
+    border: dotted var(--ColorPrimario);
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 30px;
+    font-family: var(--FuenteRoboto);
+}
+
+.Derecha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.Mensaje{
+    width: 300px;
+    height: 310px;
+    padding: 10px;
+    resize: none;
+    border: 2px dotted var(--ColorPrimario);
+    background-color: transparent;
+    border-radius: 10%;
+}
+
+.BotonCopiar{
+    width: 150px;
+    height: 50px;
+    color: var(--ColorPrimario);
+    border: dotted var(--ColorPrimario);
+    background-color: transparent;
+    cursor: pointer;
+    font-family: var(--FuenteRoboto);
+}
+
+@media(max-width:1382px){
+
+    .Header{
+        padding: auto;
+        font-size: 40px;
+    }
+
+    main{
+        flex-direction: column;
+        width: auto;
+        gap: 70px;
+    }
+
+    .ImagenFlecha{
+        transform: rotate(90deg);
+        width: 150px;
+        height: 50px;
+    }
+
+}
+
+@media(max-width:738px){
+
+    .Header{
+        padding: 10%;
+        font-size: 25px;
+    }
+
+    main{
+        flex-direction: column;
+        width: auto;
+        gap: 70px;
+    }
+
+    .AreaTexto{
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+    }
+
+    .Advertencia{
+        font-size: auto;
+    }
+
+    .Botones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .Mensaje{
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+    }
+
+    .ImagenFlecha{
+        transform: rotate(90deg);
+        width: 150px;
+        height: 90px;
+    }
+
+}

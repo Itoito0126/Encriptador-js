@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ChallengeEncriptador </title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+    <header class="Header"> Encriptador/Desencriptador </header>
+
+    <main>
+
+        <section class="Izquierda">
+
+            <div>
+                <textarea class="AreaTexto" id="AreaTexto" placeholder="Ingresa tu mensaje aquí"> </textarea>
+            </div>
+
+            <div>
+                <a class="Advertencia"> <strong>Solo letras minúsculas y sin acentos </strong></a>
+            </div>
+
+        </section>
+        
+        <section class="Centro">
+
+            <div>
+                <img class="ImagenFlecha" src="/Assets/Flecha.png" alt="Imagen de Flecha" >
+            </div>
+
+            <div class="Botones">
+                <button class="BotonEncriptar" onclick="BotonEncriptar()"> Encriptar </button>
+                <button class="BotonDesencriptar" onclick="BotonDesencriptar()"> Desencriptar </button>
+            </div>
+
+        </section>
+        
+        <section class="Derecha">
+
+            <div>
+                <textarea class="Mensaje" id="Mensaje"> </textarea>
+            </div>
+
+            <div>
+                <button class="BotonCopiar" onclick="CopiarTexto()"> Copiar </button>
+            </div>
+            
+        </section>
+
+    </main>
+<script src="/script.js"> </script>
+</body>
+</html>
