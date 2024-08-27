@@ -14,7 +14,7 @@
 }
 
 body{
-    background-image: url(/Assets/Hoja.jpg);
+    background-image: url(./Assets/Hoja.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
